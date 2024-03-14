@@ -1,0 +1,85 @@
+var jsonResume={
+    "basics": {
+      "name": "Manisabari S",
+      "email": "sabariskrms2839@gmail.com",
+      "phone": 8072113094,
+      "degree": "B.E",
+      "location": {
+        "address": "175, Senguntha puram, Chithode",
+        "postalCode": 638102,
+        "city": "Erode",
+        "state": "Tamilnadu",
+        "country": "India"
+      },
+      "profiles": 
+        {
+          "website": "https://www.linkedin.com/in/manisabari-s-8098731a6",
+          "github":"https://github.com/ManisabariS",
+        }
+      
+    },
+    "work": [
+      {
+        "company": "Welvision Innovations Pvt Ltd",
+        "position": "Software Engineer",
+        "startDate": "2022-05-01",
+        "endDate": "Till date",
+        "summary": "i am the software engineer handling various task and gaining lots of experience",
+      },
+    ],
+    "education": [
+      {
+        "institution": "IRTT, Erode",
+        "department": "Electrical & Electronics",
+        "studyType": "fulltime",
+        "batch start year": 2018,
+        "batch end year": 2021,
+        "gpa": 8.3,
+      }
+    ],
+    "skills": [
+      {
+        "name": "C++,javascript, MFC, Image processing, VC++,Sql Server",
+        "level": "Intermediate",
+        "project": 
+          "Roller auto visual inspecting software"
+        
+      }
+    ],
+    "languages": [
+      {
+        "language": "Tamil,Enlish",
+      }
+    ],
+    "interests": [
+      {
+        "name": "industrial automation, Developing logics,",
+      }
+    ]
+  };
+  //************************************json end**************************
+
+console.log('*************************For Loop**********************************');
+// for loop
+const keys = Object.keys(jsonResume);
+for (let i = 0; i < keys.length; i++) {
+  const key = keys[i];
+  const value = jsonResume[key];
+  console.log(value);
+}
+console.log('*************************For Each Loop**********************************');
+//For-Each 
+Object.entries(jsonResume).forEach(([key, value]) => 
+{
+  console.log(value);
+});
+console.log('*************************For in Loop**********************************');
+//for-in 
+for (let key in jsonResume) {
+  console.log(jsonResume[key]);
+}
+console.log('*************************For of Loop**********************************');
+//for-of 
+for (const value of Object.values(jsonResume)) {
+  console.log(value);
+}
